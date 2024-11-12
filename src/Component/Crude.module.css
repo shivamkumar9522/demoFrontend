@@ -1,0 +1,9 @@
+.tableContainer{
+  margin: 80px;
+}
+.button{
+margin-left: 1070px;
+margin-top: -50px;
+position: sticky;
+z-index: 1000;
+}
