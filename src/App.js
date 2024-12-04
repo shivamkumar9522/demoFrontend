@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Crude from "./Component/Employee";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Edit from "./Component/EditEmployee";
 import AddForm from "./Component/AddEmployee";
+import Edit from "./Component/EditEmployee";
 
 
 function App() {
