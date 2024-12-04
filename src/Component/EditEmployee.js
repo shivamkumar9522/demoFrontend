@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { Form, FormGroup, Label, Input, Button, Row,Col } from "reactstrap";
+import { Form, FormGroup, Label, Input, Button, Row, Col } from "reactstrap";
 
 const Edit = () => {
   const { id } = useParams();
@@ -51,38 +51,45 @@ const Edit = () => {
   };
 
   return (
-    <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"100px"}}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "100px",
+      }}
+    >
       <Form onSubmit={handleSubmit}>
         <Row>
-         <Col >
-        <FormGroup>
-          <Label for="exampleTitle">Title</Label>
-          <Input
-            id="exampleTitle"
-            name="title"
-            placeholder="Enter Title"
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            />
-        </FormGroup>
-            </Col>
-            </Row>
-            <Row>
-             <Col >
-        <FormGroup>
-          <Label for="exampleDescription">Description</Label>
-          <Input
-            id="exampleDescription"
-            name="description"
-            placeholder="Enter Description"
-            type="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            />
-        </FormGroup>
-            </Col>   
-           </Row>
+          <Col>
+            <FormGroup>
+              <Label for="exampleTitle">Title</Label>
+              <Input
+                id="exampleTitle"
+                name="title"
+                placeholder="Enter Title"
+                type="text"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <FormGroup>
+              <Label for="exampleDescription">Description</Label>
+              <Input
+                id="exampleDescription"
+                name="description"
+                placeholder="Enter Description"
+                type="text"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+              />
+            </FormGroup>
+          </Col>
+        </Row>
         <Button
           type="submit"
           style={{

@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Crude />} />
           <Route path="edit/:id" element={<Edit />} />
-          <Route path="/form" element={<AddForm />} />
+          <Route path="/add" element={<AddForm />} />
         
         </Routes>
       </BrowserRouter>
